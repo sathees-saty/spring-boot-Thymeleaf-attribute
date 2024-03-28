@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thymeleaf Basics</title>
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 5px;
+		}
+
+		th {
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="background-color: slateblue; color: white;">
+		<h8>thymeleaf text example:</h3>
+			<br></br>
+		<h8 th:text="${temp}"></h8>
+		<br></br>
+		<h8>thymeleaf if example:</h8>
+		<br></br>
+		<h8 th:if="${flag == true}">Display only if flag is true!</h8>
+		<br></br>
+		<h8>thymeleaf each example:</h8>
+		<table style="width:100%">
+			<tr>
+				<th>Employee ID</th>
+				<th>Employee Name</th>
+				<th>Employee Salary</th>
+				</tr>
+				<tr th:each="employee: ${employees}">
+				    <td th:text="${employee.id}" />
+				    <td th:text="${employee.name}" />
+					<td th:text="${employee.sal}" />
+				</tr>
+		</table>
+	</div>
+</body>
+
+</html>
