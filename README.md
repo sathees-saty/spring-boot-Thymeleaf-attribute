@@ -38,7 +38,4 @@ http://localhost:8080/switch-case
 <br>
 ![image](https://github.com/sathees-saty/spring-boot-Thymeleaf-attribute/assets/65384711/b515e9bb-9d87-4308-8bd8-37baeb5445bf)
 
-    <br>
-<br>
-   
 </html>
